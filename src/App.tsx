@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Section from './components/layout/Section';
@@ -62,6 +63,7 @@ function App() {
       </main>
 
       <Footer isDarkMode={isDarkMode} name={portfolioData.name} />
+      <Analytics />
     </div>
   );
 }
