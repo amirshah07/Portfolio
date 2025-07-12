@@ -1,11 +1,56 @@
+import { useState } from 'react';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import Section from './components/layout/Section';
+import AboutMe from './components/sections/AboutMe';
+import Skills from './components/sections/Skills';
+import Projects from './components/sections/Projects';
+import { portfolioData } from './data/portfolio';
+
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <h1 className="text-3xl font-bold text-center pt-20">
-        Portfolio
-      </h1>
+    <div className={`min-h-screen transition-all duration-300 ${
+      isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'
+    }`}>
+      <Header 
+        isDarkMode={isDarkMode}
+        toggleDarkMode={() => setIsDarkMode(!isDarkMode)}
+        name={portfolioData.name}
+        socials={portfolioData.socials}
+      />
+
+      <main className="pt-16 transition-all duration-300">
+        <Section 
+          id="about" 
+          title="About Me" 
+          isDarkMode={isDarkMode}
+        >
+          <AboutMe description={portfolioData.aboutMe} isDarkMode={isDarkMode} />
+        </Section>
+
+        <Section 
+          id="skills" 
+          title="Skills" 
+          isDarkMode={isDarkMode}
+          className={isDarkMode ? 'bg-gray-800/30' : 'bg-gray-50'}
+        >
+          <Skills skills={portfolioData.skills} isDarkMode={isDarkMode} />
+        </Section>
+
+        <Section 
+          id="projects" 
+          title="Projects" 
+          isDarkMode={isDarkMode}
+        >
+          <Projects projects={portfolioData.projects} isDarkMode={isDarkMode} />
+        </Section>
+      </main>
+
+      <Footer isDarkMode={isDarkMode} name={portfolioData.name} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
