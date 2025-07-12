@@ -3,28 +3,28 @@ import type { PortfolioData } from '../types';
 export const portfolioData: PortfolioData = {
   name: "Amir Shah",
   
-  aboutMe: "Add description here",
+  aboutMe: "Hi, I'm Amir! I'm a student at the National University of Singapore (NUS), majoring in Data Science and Analytics with a minor in Computer Science. I enjoy building all kinds of projects that are functional, user-friendly, and thoughtfully designed. I'm always keen to learn new technologies and turn ideas into useful, working products.",
 
   skills: [
     {
       category: "Languages",
-      skills: ["TypeScript", "JavaScript", "Python", "SQL", "Java"]
+      skills: ["TypeScript", "JavaScript", "Python", "Java", "C", "SQL", "R"]
     },
     {
       category: "Frontend",
-      skills: ["HTML", "CSS", "React", "Tailwind CSS"]
+      skills: ["HTML", "CSS", "React", "Tailwind CSS", "Bootstrap"]
     },
     {
       category: "Backend",
-      skills: ["Node.js", "Express.js"]
+      skills: ["Node.js", "Express.js", "Flask"]
     },
     {
       category: "Database",
-      skills: ["PostgreSQL", "SQLite", "Firebase", "Supabase"]
+      skills: ["PostgreSQL", "SQLite", "Supabase", "Firebase"]
     },
     {
       category: "Tools",
-      skills: ["Git", "Docker"]
+      skills: ["Git", "Docker", "Vite", "Vercel"]
     }
   ],
 
@@ -32,24 +32,25 @@ export const portfolioData: PortfolioData = {
     {
       id: 1,
       title: "ItineraryAI",
-      description: "ItineraryAI is a full-stack web application that creates customized travel itineraries using Claude AI and Google Places API. Plan solo adventures or coordinate group trips with friends.",
+      description: "ItineraryAI is an AI-powered travel planning platform that generates personalised trip itineraries in seconds using Anthropic's Claude API and Google Places API. It features day-by-day plans tailored to your budget and preferences, collaborative planning with friends, interactive maps and intelligent scheduling to minimise travel time. It was built at NUS Hack & Roll 2025.",
       technologies: ["React", "Node.js", "Express.js", "Firebase", "Python"],
       images: [
-        "/images/projects/itinerary-ai/screenshot1.png",
-        "/images/projects/itinerary-ai/screenshot2.png",
-        "/images/projects/itinerary-ai/screenshot3.png"
+        "/images/projects/itinerary-ai/image1.png",
+        "/images/projects/itinerary-ai/image2.png",
+        "/images/projects/itinerary-ai/image3.png"
       ],
       githubLink: "https://github.com/amirshah07/ItineraryAI"
     },
     {
       id: 2,
       title: "NUSAssist",
-      description: "NUSAssist is a comprehensive web application designed to help NUS students organize their academic journey. From intelligent module planning and optimized timetable generation to real-time GPA tracking, NUSAssist streamlines student life with powerful, easy-to-use tools.",
+      description: "NUSAssist is a comprehensive academic planning platform for NUS students, featuring an intelligent timetable optimiser, GPA tracking with performance forecasting and interactive module roadmaps. The personalised dashboard helps students monitor their schedules and academic progress from matriculation to graduation. It was built for NUS Orbital 2025.",
       technologies: ["React", "TypeScript", "Node.js", "Express.js", "Supabase", "Python", "Docker"],
       images: [
-        "/images/projects/nus-assist/screenshot1.png",
-        "/images/projects/nus-assist/screenshot2.png",
-        "/images/projects/nus-assist/screenshot3.png"
+        "/images/projects/nus-assist/image1.png",
+        "/images/projects/nus-assist/image2.png",
+        "/images/projects/nus-assist/image3.png",
+        "/images/projects/nus-assist/image4.png"
       ],
       liveLink: "https://nusassist.com",
       githubLink: "https://github.com/amirshah07/NUSAssist"
