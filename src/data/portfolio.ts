@@ -8,7 +8,7 @@ export const portfolioData: PortfolioData = {
   skills: [
     {
       category: "Languages",
-      skills: ["TypeScript", "JavaScript", "Python", "Java", "C", "SQL", "R"]
+      skills: ["TypeScript", "JavaScript", "Python", "Java", "Go", "C", "SQL", "R"]
     },
     {
       category: "Frontend",
@@ -24,7 +24,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       category: "Tools",
-      skills: ["Git", "Docker", "Vite", "Vercel"]
+      skills: ["Git", "Docker", "WebAssembly", "Vite", "Vercel"]
     }
   ],
 
@@ -54,6 +54,20 @@ export const portfolioData: PortfolioData = {
       ],
       liveLink: "https://nusassist.com",
       githubLink: "https://github.com/amirshah07/NUSAssist"
+    },
+    {
+      id: 3,
+      title: "Tile Tactics",
+      description: "Tile Tactics is an advanced Scrabble analysis and training platform that helps players improve through strategic move evaluation and AI practice. It features sophisticated board analysis that considers scoring, leave quality, positioning and defence, a challenging AI opponent for practice games, and an instant word finder supporting multiple official dictionaries. Built with Go compiled to WebAssembly, all computation runs locally in the browser for zero-latency performance.",
+      technologies: ["React", "TypeScript", "Go", "WebAssembly"],
+      images: [
+        "/images/projects/tile-tactics/image1.png",
+        "/images/projects/tile-tactics/image2.png",
+        "/images/projects/tile-tactics/image3.png",
+        "/images/projects/tile-tactics/image4.png"
+      ],
+      liveLink: "https://tiletactics.com",
+      githubLink: "https://github.com/amirshah07/TileTactics"
     }
   ],
 
