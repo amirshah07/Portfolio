@@ -58,7 +58,7 @@ export const portfolioData: PortfolioData = {
     {
       id: 3,
       title: "Tile Tactics",
-      description: "Tile Tactics is an advanced Scrabble analysis and training platform that helps players improve through strategic move evaluation and AI practice. It features sophisticated board analysis that considers scoring, leave quality, positioning and defence, a challenging AI opponent for practice games, and an instant word finder supporting multiple official dictionaries. Built with Go compiled to WebAssembly, all computation runs locally in the browser for zero-latency performance.",
+      description: "Tile Tactics is an advanced Scrabble analysis and training platform that helps players improve through strategic move evaluation and AI practice. It features sophisticated board analysis that considers scoring, leave quality, positioning and defence, a challenging AI opponent for practice games, and an instant word finder supporting multiple official dictionaries. Built with Go compiled to WebAssembly, all computation runs locally in the browser, eliminating network latency and server dependency.",
       technologies: ["React", "TypeScript", "Go", "WebAssembly"],
       images: [
         "/images/projects/tile-tactics/image1.png",
