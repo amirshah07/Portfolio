@@ -4,7 +4,8 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Section from './components/layout/Section';
 import AboutMe from './components/sections/AboutMe';
-import Skills from './components/sections/Skills';
+import Skills from './components/sections/Skills'; // not being displayed
+import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
 import { portfolioData } from './data/portfolio';
 
@@ -43,7 +44,8 @@ function App() {
         >
           <AboutMe description={portfolioData.aboutMe} isDarkMode={isDarkMode} />
         </Section>
-
+        
+        {/*
         <Section 
           id="skills" 
           title="Skills" 
@@ -52,13 +54,23 @@ function App() {
         >
           <Skills skills={portfolioData.skills} isDarkMode={isDarkMode} />
         </Section>
+        */}
 
         <Section 
           id="projects" 
           title="Projects" 
           isDarkMode={isDarkMode}
+          className={isDarkMode ? 'bg-gray-800/30' : 'bg-gray-50'}
         >
           <Projects projects={portfolioData.projects} isDarkMode={isDarkMode} />
+        </Section>
+
+        <Section 
+          id="experience" 
+          title="Experience" 
+          isDarkMode={isDarkMode}
+        >
+          <Experience experience={portfolioData.experience} isDarkMode={isDarkMode} />
         </Section>
       </main>
 
