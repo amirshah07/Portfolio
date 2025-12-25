@@ -7,8 +7,8 @@ Welcome to my personal portfolio website showcasing my projects and technical sk
 ## Sections
 
 * **About Me**
-* **Skills** 
 * **Projects**
+* **Experience**
 
 ## Key Features
 
