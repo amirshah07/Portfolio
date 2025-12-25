@@ -61,6 +61,7 @@ export default function Header({ isDarkMode, toggleDarkMode, name, socials }: He
               >
                 About
               </button>
+              {/*
               <button 
                 onClick={() => scrollToSection('skills')}
                 className={`font-medium transition-all duration-300 px-3 py-1 rounded-md ${
@@ -71,6 +72,7 @@ export default function Header({ isDarkMode, toggleDarkMode, name, socials }: He
               >
                 Skills
               </button>
+              */}
               <button 
                 onClick={() => scrollToSection('projects')}
                 className={`font-medium transition-all duration-300 px-3 py-1 rounded-md ${
@@ -80,6 +82,16 @@ export default function Header({ isDarkMode, toggleDarkMode, name, socials }: He
                 }`}
               >
                 Projects
+              </button>
+                            <button 
+                onClick={() => scrollToSection('experience')}
+                className={`font-medium transition-all duration-300 px-3 py-1 rounded-md ${
+                  isDarkMode 
+                    ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                }`}
+              >
+                Experience
               </button>
             </div>
             
@@ -174,39 +186,51 @@ export default function Header({ isDarkMode, toggleDarkMode, name, socials }: He
             <X size={24} className="transition-transform duration-300 group-hover:scale-110" />
           </button>
 
-          {/* Navigation Links */}
-          <nav className="mt-8 space-y-4">
-            <button 
-              onClick={() => scrollToSection('about')}
-              className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
-                isDarkMode 
-                  ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
-                  : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-              }`}
-            >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection('skills')}
-              className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
-                isDarkMode 
-                  ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
-                  : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-              }`}
-            >
-              Skills
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
-                isDarkMode 
-                  ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
-                  : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-              }`}
-            >
-              Projects
-            </button>
-          </nav>
+        {/* Navigation Links */}
+        <nav className="mt-8 space-y-4">
+          <button 
+            onClick={() => scrollToSection('about')}
+            className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
+              isDarkMode 
+                ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
+                : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+            }`}
+          >
+            About
+          </button>
+          {/*
+          <button 
+            onClick={() => scrollToSection('skills')}
+            className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
+              isDarkMode 
+                ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
+                : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+            }`}
+          >
+            Skills
+          </button>
+          */}
+          <button 
+            onClick={() => scrollToSection('projects')}
+            className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
+              isDarkMode 
+                ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
+                : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+            }`}
+          >
+            Projects
+          </button>
+          <button 
+            onClick={() => scrollToSection('experience')}
+            className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
+              isDarkMode 
+                ? 'text-gray-300 hover:text-blue-400 hover:bg-gray-800' 
+                : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+            }`}
+          >
+            Experience
+          </button>
+        </nav>
 
           {/* Social Links */}
           <div className={`mt-8 pt-8 border-t ${
