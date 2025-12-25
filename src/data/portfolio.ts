@@ -6,6 +6,7 @@ export const portfolioData: PortfolioData = {
   aboutMe: "Hi, I'm Amir! I'm a student at the National University of Singapore (NUS), double majoring in Data Science & Analytics and Computer Science. I enjoy building all kinds of projects that are functional, user-friendly, and thoughtfully designed. I'm always keen to learn new technologies and turn ideas into useful, working products.",
 
   skills: [
+    /*
     {
       category: "Languages",
       skills: ["TypeScript", "JavaScript", "Python", "Java", "Go", "C", "SQL", "R"]
@@ -26,6 +27,7 @@ export const portfolioData: PortfolioData = {
       category: "Tools",
       skills: ["Git", "Docker", "WebAssembly", "Vite", "Vercel"]
     }
+    */
   ],
 
   projects: [
@@ -68,6 +70,18 @@ export const portfolioData: PortfolioData = {
       ],
       liveLink: "https://tiletactics.com",
       githubLink: "https://github.com/amirshah07/TileTactics"
+    },
+    {
+      id: 4,
+      title: "Crypto Market Analytics",
+      description: "Crypto Market Analytics is a data engineering project that ingests cryptocurrency market data using a Spark-based ETL pipeline and loads it into a PostgreSQL star schema data warehouse. Market data for the top 50 cryptocurrencies is collected every 5 minutes from the CoinGecko API, stored as raw CSV files, transformed into dimension and fact tables using PySpark, and visualised in a Streamlit dashboard showing price trends, top movers, and market capitalisation rankings.",
+      technologies: ["Python", "PySpark", "PostgreSQL", "Docker", "Streamlit", "Plotly"],
+      images: [
+        "/images/projects/crypto-market-analytics/image1.png",
+        "/images/projects/crypto-market-analytics/image2.png",
+        "/images/projects/crypto-market-analytics/image3.png"
+      ],
+      githubLink: "https://github.com/amirshah07/crypto-market-analytics"
     }
   ],
 
@@ -89,16 +103,7 @@ export const portfolioData: PortfolioData = {
     }
   ],
 
-  // Experience data for future use (uncomment and fill when adding experience section)
   experience: [
-    // {
-    //   id: 1,
-    //   company: "Company Name",
-    //   position: "Position in company",
-    //   startDate: new Date("2022-01-01"),
-    //   endDate: new Date("2023-06-01"), // or leave out for "Present"
-    //   description: "Developed...",
-    //   technologies: ["React", "Typescript", "Node.js", "Express.js"]
-    // }
+
   ]
 };
