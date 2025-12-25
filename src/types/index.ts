@@ -37,8 +37,8 @@ export interface Experience {
 export interface PortfolioData {
   name: string; // For the header
   aboutMe: string; // Description text
-  skills: SkillCategory[];
+  skills?: SkillCategory[];
   projects: Project[];
   socials: SocialLink[]; 
-  experience?: Experience[]; // Optional for future additions
+  experience: Experience[];
 }
