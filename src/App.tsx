@@ -4,7 +4,6 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Section from './components/layout/Section';
 import AboutMe from './components/sections/AboutMe';
-import Skills from './components/sections/Skills'; // not being displayed
 import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
 import { portfolioData } from './data/portfolio';
