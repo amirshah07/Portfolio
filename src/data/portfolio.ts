@@ -104,6 +104,13 @@ export const portfolioData: PortfolioData = {
   ],
 
   experience: [
-
+     {
+       id: 1,
+       company: "HTX (Home Team Science & Technology Agency)",
+       position: "Cloud Engineer Intern",
+       startDate: new Date("2026-01-05"),
+       // endDate: new Date("2026-04-17"), // or leave out for "Present"
+       description: "Ongoing",
+     }
   ]
 };
