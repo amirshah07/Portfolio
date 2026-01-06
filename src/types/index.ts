@@ -30,7 +30,6 @@ export interface Experience {
   startDate: Date;
   endDate?: Date; 
   description: string;
-  technologies: string[];
 }
 
 // Complete portfolio data type
