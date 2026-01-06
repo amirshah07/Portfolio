@@ -74,34 +74,12 @@ export default function Experience({ experience, isDarkMode }: ExperienceProps) 
           </div>
 
           <p
-            className={`text-base md:text-lg mb-6 leading-relaxed transition-colors duration-300 ${
+            className={`text-base md:text-lg leading-relaxed transition-colors duration-300 ${
               isDarkMode ? 'text-gray-400' : 'text-gray-500'
             }`}
           >
             {exp.description}
           </p>
-
-          <div className="flex flex-wrap gap-2">
-            {exp.technologies.map((tech, techIndex) => (
-              <span
-                key={techIndex}
-                className={`text-sm px-3 py-1.5 rounded-full font-medium transition-all duration-300 relative overflow-hidden ${
-                  isDarkMode 
-                    ? 'bg-gray-700 text-gray-300 border border-gray-600 shadow-sm hover:border-blue-500 hover:text-blue-300' 
-                    : 'bg-gray-100 text-gray-700 border border-gray-200 shadow-sm hover:border-blue-400 hover:text-blue-600'
-                }`}
-              >
-                <span className="absolute inset-0 rounded-full pointer-events-none bg-gradient-to-br from-black/10 to-transparent"></span>
-                <span 
-                  className="absolute inset-0 rounded-full pointer-events-none bg-gradient-to-br from-white via-transparent to-transparent transition-opacity duration-300"
-                  style={{
-                    opacity: isDarkMode ? 0.05 : 0.4
-                  }}
-                ></span>
-                <span className="relative">{tech}</span>
-              </span>
-            ))}
-          </div>
         </div>
       ))}
     </div>
