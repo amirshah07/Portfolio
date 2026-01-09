@@ -107,9 +107,9 @@ export const portfolioData: PortfolioData = {
      {
        id: 1,
        company: "HTX (Home Team Science & Technology Agency)",
-       position: "Cloud Engineer Intern",
+       position: "Software Engineer Intern",
        startDate: new Date("2026-01-05"),
-       // endDate: new Date("2026-04-17"), // or leave out for "Present"
+       // endDate: new Date("2026-04-03"), // or leave out for "Present"
        description: "xCloud",
      }
   ]
