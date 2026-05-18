@@ -10,8 +10,8 @@ interface ProjectCardProps {
 export default function ProjectCard({ project, isDarkMode }: ProjectCardProps) {
   return (
     <div className={`rounded-xl overflow-hidden transition-all duration-300 ${
-      isDarkMode 
-        ? 'bg-gray-800 shadow-2xl shadow-black/50 border border-gray-700 hover:shadow-2xl hover:shadow-black/60 hover:border-gray-600' 
+      isDarkMode
+        ? 'bg-neutral-900 shadow-2xl shadow-black/50 border border-neutral-800 hover:shadow-2xl hover:shadow-black/60 hover:border-neutral-700'
         : 'bg-white shadow-lg border border-gray-200 hover:shadow-xl hover:border-gray-300'
     }`}>
       <ImageCarousel images={project.images} title={project.title} isDarkMode={isDarkMode} />
@@ -19,7 +19,7 @@ export default function ProjectCard({ project, isDarkMode }: ProjectCardProps) {
       <div className="p-8 transition-colors duration-300">
         <h3 className="text-2xl font-semibold mb-3 transition-colors duration-300">{project.title}</h3>
         <p className={`text-lg mb-6 transition-colors duration-300 ${
-          isDarkMode ? 'text-gray-400' : 'text-gray-500'
+          isDarkMode ? 'text-neutral-400' : 'text-gray-500'
         }`}>
           {project.description}
         </p>
@@ -29,9 +29,9 @@ export default function ProjectCard({ project, isDarkMode }: ProjectCardProps) {
             <span
               key={idx}
               className={`text-sm px-3 py-1.5 rounded-full font-medium transition-all duration-300 relative overflow-hidden ${
-                isDarkMode 
-                  ? 'bg-gray-700 text-gray-300 border border-gray-600 shadow-sm hover:border-blue-500 hover:text-blue-300' 
-                  : 'bg-gray-100 text-gray-700 border border-gray-200 shadow-sm hover:border-blue-400 hover:text-blue-600'
+                isDarkMode
+                  ? 'bg-neutral-800 text-neutral-300 border border-neutral-700 shadow-sm hover:border-neutral-600 hover:text-white'
+                  : 'bg-gray-100 text-gray-700 border border-gray-200 shadow-sm hover:border-gray-400 hover:text-gray-900'
               }`}
             >
               <span className="absolute inset-0 rounded-full pointer-events-none bg-gradient-to-br from-black/10 to-transparent"></span>
@@ -53,7 +53,7 @@ export default function ProjectCard({ project, isDarkMode }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className={`group flex items-center gap-2 text-lg font-medium transition-colors duration-300 ${
-                isDarkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-700'
+                isDarkMode ? 'text-neutral-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'
               }`}
             >
               <ExternalLink size={20} className="transition-transform duration-300 group-hover:scale-110" />
@@ -66,7 +66,7 @@ export default function ProjectCard({ project, isDarkMode }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className={`group flex items-center gap-2 text-lg font-medium transition-colors duration-300 ${
-                isDarkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-700'
+                isDarkMode ? 'text-neutral-300 hover:text-white' : 'text-gray-700 hover:text-gray-900'
               }`}
             >
               <Github size={20} className="transition-transform duration-300 group-hover:scale-110" />

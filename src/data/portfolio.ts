@@ -111,6 +111,7 @@ export const portfolioData: PortfolioData = {
        startDate: new Date("2026-01-05"),
        endDate: new Date("2026-03-05"),
        description: "xCloud",
+       logo: "/images/logos/htx.png"
      },
       {
        id: 2,
@@ -119,6 +120,7 @@ export const portfolioData: PortfolioData = {
        startDate: new Date("2026-05-12"),
        //endDate: new Date("2026-07-31"), // or leave out for "Present"
        description: "AIOps",
+       logo: "/images/logos/visa.png"
      }
   ]
 };

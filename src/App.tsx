@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className={`min-h-screen transition-all duration-300 ${
-      isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'
+      isDarkMode ? 'bg-black text-white' : 'bg-white text-gray-900'
     }`}>
       <Header 
         isDarkMode={isDarkMode}
@@ -45,21 +45,21 @@ function App() {
         </Section>
         
         {/*
-        <Section 
-          id="skills" 
-          title="Skills" 
+        <Section
+          id="skills"
+          title="Skills"
           isDarkMode={isDarkMode}
-          className={isDarkMode ? 'bg-gray-800/30' : 'bg-gray-50'}
+          className={isDarkMode ? 'bg-neutral-900/60' : 'bg-gray-50'}
         >
           <Skills skills={portfolioData.skills} isDarkMode={isDarkMode} />
         </Section>
         */}
 
-        <Section 
-          id="projects" 
-          title="Projects" 
+        <Section
+          id="projects"
+          title="Projects"
           isDarkMode={isDarkMode}
-          className={isDarkMode ? 'bg-gray-800/30' : 'bg-gray-50'}
+          className={isDarkMode ? 'bg-neutral-900/60' : 'bg-gray-50'}
         >
           <Projects projects={portfolioData.projects} isDarkMode={isDarkMode} />
         </Section>

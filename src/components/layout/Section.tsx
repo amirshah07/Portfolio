@@ -9,7 +9,7 @@ interface SectionProps {
 }
 
 export default function Section({ id, title, isDarkMode, className, children }: SectionProps) {
-  const backgroundClass = className || (isDarkMode ? 'bg-gray-900' : 'bg-white');
+  const backgroundClass = className || (isDarkMode ? 'bg-black' : 'bg-white');
   
   return (
     <section
@@ -20,16 +20,16 @@ export default function Section({ id, title, isDarkMode, className, children }: 
         {title && (
           <div className="mb-8 text-center">
             <h2 className={`text-5xl font-bold transition-all duration-300 ${
-              isDarkMode 
-                ? 'bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent'
-                : 'bg-gradient-to-r from-blue-600 to-sky-600 bg-clip-text text-transparent'
+              isDarkMode
+                ? 'text-white'
+                : 'text-gray-900'
             }`}>
               {title}
             </h2>
             <div className={`mt-4 w-24 h-1 mx-auto rounded-full transition-all duration-300 ${
-              isDarkMode 
-                ? 'bg-gradient-to-r from-blue-400 to-purple-600'
-                : 'bg-gradient-to-r from-indigo-600 to-blue-600'
+              isDarkMode
+                ? 'bg-neutral-700'
+                : 'bg-gray-400'
             }`}></div>
           </div>
         )}

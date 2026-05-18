@@ -45,16 +45,16 @@ export default function ImageCarousel({ images, title, isDarkMode }: ImageCarous
   if (images.length === 0) {
     return (
       <div className={`relative h-64 md:h-96 rounded-t-xl flex items-center justify-center transition-colors duration-300 ${
-        isDarkMode ? 'bg-gray-900' : 'bg-gray-100'
+        isDarkMode ? 'bg-neutral-950' : 'bg-gray-100'
       }`}>
-        <p className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>No images available</p>
+        <p className={`transition-colors duration-300 ${isDarkMode ? 'text-neutral-400' : 'text-gray-600'}`}>No images available</p>
       </div>
     );
   }
 
   return (
     <div className={`relative h-64 md:h-96 rounded-t-xl overflow-hidden transition-colors duration-300 ${
-      isDarkMode ? 'bg-gray-900' : 'bg-gray-100'
+      isDarkMode ? 'bg-neutral-950' : 'bg-gray-100'
     }`}>
       {/* Images Container with Slide Animation */}
       <div className="absolute inset-0 overflow-hidden">
@@ -71,9 +71,9 @@ export default function ImageCarousel({ images, title, isDarkMode }: ImageCarous
             >
               {imageError[index] ? (
                 <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br transition-colors duration-300 ${
-                  isDarkMode ? 'from-gray-800 to-gray-900' : 'from-gray-50 to-gray-100'
+                  isDarkMode ? 'from-neutral-900 to-neutral-950' : 'from-gray-50 to-gray-100'
                 }`}>
-                  <p className={`transition-colors duration-300 ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>Image unavailable</p>
+                  <p className={`transition-colors duration-300 ${isDarkMode ? 'text-neutral-400' : 'text-gray-600'}`}>Image unavailable</p>
                 </div>
               ) : (
                 <img

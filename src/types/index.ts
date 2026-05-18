@@ -22,14 +22,15 @@ export interface SocialLink {
   icon: string; 
 }
 
-// Experience type 
+// Experience type
 export interface Experience {
   id: number;
   company: string;
   position: string;
   startDate: Date;
-  endDate?: Date; 
+  endDate?: Date;
   description: string;
+  logo?: string; // Optional company logo
 }
 
 // Complete portfolio data type
