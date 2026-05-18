@@ -6,6 +6,7 @@ import Section from './components/layout/Section';
 import AboutMe from './components/sections/AboutMe';
 import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
+import FloatingGameButton from './components/ui/FloatingGameButton';
 import { portfolioData } from './data/portfolio';
 
 function App() {
@@ -53,9 +54,9 @@ function App() {
           <Projects projects={portfolioData.projects} isDarkMode={isDarkMode} />
         </Section>
 
-        <Section 
-          id="experience" 
-          title="Experience" 
+        <Section
+          id="experience"
+          title="Experience"
           isDarkMode={isDarkMode}
         >
           <Experience experience={portfolioData.experience} isDarkMode={isDarkMode} />
@@ -63,6 +64,7 @@ function App() {
       </main>
 
       <Footer isDarkMode={isDarkMode} name={portfolioData.name} />
+      <FloatingGameButton isDarkMode={isDarkMode} />
       <Analytics />
     </div>
   );
