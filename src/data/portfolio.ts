@@ -109,8 +109,16 @@ export const portfolioData: PortfolioData = {
        company: "HTX (Home Team Science & Technology Agency)",
        position: "Software Engineer Intern",
        startDate: new Date("2026-01-05"),
-       // endDate: new Date("2026-04-03"), // or leave out for "Present"
+       endDate: new Date("2026-03-05"),
        description: "xCloud",
+     },
+      {
+       id: 2,
+       company: "Visa",
+       position: "Software Engineer Intern",
+       startDate: new Date("2026-05-12"),
+       //endDate: new Date("2026-07-31"), // or leave out for "Present"
+       description: "AIOps",
      }
   ]
 };
