@@ -8,10 +8,9 @@ export default function DinoGame({ isDarkMode }: DinoGameProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [gameStarted, setGameStarted] = useState(false);
   const [gameOver, setGameOver] = useState(false);
-  const [gamePaused, setGamePaused] = useState(false);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  const gameLoopRef = useRef<number>();
+  const gameLoopRef = useRef<number>(undefined);
   const gamePausedRef = useRef(false);
 
   useEffect(() => {
@@ -85,7 +84,6 @@ export default function DinoGame({ isDarkMode }: DinoGameProps) {
         e.preventDefault();
         if (gameStarted && !gameOver) {
           gamePausedRef.current = !gamePausedRef.current;
-          setGamePaused(gamePausedRef.current);
         }
       }
     };
@@ -120,7 +118,6 @@ export default function DinoGame({ isDarkMode }: DinoGameProps) {
       setScore(0);
       setGameOver(false);
       gamePausedRef.current = false;
-      setGamePaused(false);
       setGameStarted(true);
     };
 
