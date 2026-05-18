@@ -9,12 +9,6 @@ export interface Project {
   githubLink?: string; // Optional for private repos
 }
 
-// Skill category type
-export interface SkillCategory {
-  category: string;
-  skills: string[];
-}
-
 // Social links type
 export interface SocialLink {
   name: string;
@@ -37,8 +31,7 @@ export interface Experience {
 export interface PortfolioData {
   name: string; // For the header
   aboutMe: string; // Description text
-  skills?: SkillCategory[];
   projects: Project[];
-  socials: SocialLink[]; 
+  socials: SocialLink[];
   experience: Experience[];
 }

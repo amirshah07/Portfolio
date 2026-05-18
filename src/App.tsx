@@ -36,24 +36,13 @@ function App() {
       />
 
       <main className="pt-16 transition-all duration-300">
-        <Section 
-          id="about" 
-          title="About Me" 
+        <Section
+          id="about"
+          title="About Me"
           isDarkMode={isDarkMode}
         >
           <AboutMe description={portfolioData.aboutMe} isDarkMode={isDarkMode} />
         </Section>
-        
-        {/*
-        <Section
-          id="skills"
-          title="Skills"
-          isDarkMode={isDarkMode}
-          className={isDarkMode ? 'bg-neutral-900/60' : 'bg-gray-50'}
-        >
-          <Skills skills={portfolioData.skills} isDarkMode={isDarkMode} />
-        </Section>
-        */}
 
         <Section
           id="projects"

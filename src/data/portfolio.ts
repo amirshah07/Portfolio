@@ -3,32 +3,7 @@ import type { PortfolioData } from '../types';
 export const portfolioData: PortfolioData = {
   name: "Amir Shah",
   
-  aboutMe: "Hi, I’m Amir! I’m a student at the National University of Singapore (NUS), double majoring in Data Science & Analytics and Computer Science. I enjoy building projects and bringing ideas to life through code.",
-
-  skills: [
-    /*
-    {
-      category: "Languages",
-      skills: ["TypeScript", "JavaScript", "Python", "Java", "Go", "C", "SQL", "R"]
-    },
-    {
-      category: "Frontend",
-      skills: ["HTML", "CSS", "React", "Tailwind CSS", "Bootstrap"]
-    },
-    {
-      category: "Backend",
-      skills: ["Node.js", "Express.js", "Flask"]
-    },
-    {
-      category: "Database",
-      skills: ["PostgreSQL", "SQLite", "Supabase", "Firebase"]
-    },
-    {
-      category: "Tools",
-      skills: ["Git", "Docker", "WebAssembly", "Vite", "Vercel"]
-    }
-    */
-  ],
+  aboutMe: "Hi, I'm Amir! I'm a student at the National University of Singapore (NUS), double majoring in Data Science & Analytics and Computer Science. I enjoy building projects and bringing ideas to life through code.",
 
   projects: [
     {
