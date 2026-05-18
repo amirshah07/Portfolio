@@ -61,18 +61,6 @@ export default function Header({ isDarkMode, toggleDarkMode, name, socials }: He
               >
                 About
               </button>
-              {/*
-              <button
-                onClick={() => scrollToSection('skills')}
-                className={`font-medium transition-all duration-300 px-3 py-1 rounded-md ${
-                  isDarkMode
-                    ? 'text-neutral-300 hover:text-white hover:bg-neutral-900'
-                    : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
-                }`}
-              >
-                Skills
-              </button>
-              */}
               <button
                 onClick={() => scrollToSection('projects')}
                 className={`font-medium transition-all duration-300 px-3 py-1 rounded-md ${
@@ -198,18 +186,6 @@ export default function Header({ isDarkMode, toggleDarkMode, name, socials }: He
           >
             About
           </button>
-          {/*
-          <button
-            onClick={() => scrollToSection('skills')}
-            className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
-              isDarkMode
-                ? 'text-neutral-300 hover:text-white hover:bg-neutral-900'
-                : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
-            }`}
-          >
-            Skills
-          </button>
-          */}
           <button
             onClick={() => scrollToSection('projects')}
             className={`block w-full text-left font-medium transition-all duration-300 px-4 py-3 rounded-md ${
