@@ -93,7 +93,7 @@ export const portfolioData: PortfolioData = {
        company: "Visa",
        position: "Software Engineer Intern",
        startDate: new Date("2026-05-12"),
-       //endDate: new Date("2026-07-31"), // or leave out for "Present"
+       endDate: new Date("2026-07-31"), // or leave out for "Present"
        description: "AIOps",
        logo: "/images/logos/visa.png"
      }
