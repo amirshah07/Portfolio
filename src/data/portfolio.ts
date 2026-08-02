@@ -57,6 +57,18 @@ export const portfolioData: PortfolioData = {
         "/images/projects/crypto-market-analytics/image3.png"
       ],
       githubLink: "https://github.com/amirshah07/crypto-market-analytics"
+    },
+    {
+      id: 5,
+      title: "Order Processing Pipeline",
+      description: "A backend system for handling online orders at scale, built with FastAPI, Kafka, Redis and PostgreSQL. When an order comes in, the API responds immediately while Kafka processes it in the background, and Redis safely checks and updates stock levels so two customers can never buy the last item at the same time. Failed messages are automatically retried and routed to a separate queue if they keep failing, so no order is ever silently lost. Prometheus and Grafana provide live dashboards showing order throughput and system health.",
+      technologies: ["Python", "FastAPI", "Kafka", "Redis", "PostgreSQL", "Docker", "Prometheus", "Grafana"],
+      images: [
+        "/images/projects/order-pipeline/image1.png",
+        "/images/projects/order-pipeline/image2.png",
+        "/images/projects/order-pipeline/image3.png"
+      ],
+      githubLink: "https://github.com/amirshah07/order-processing-pipeline"
     }
   ],
 
