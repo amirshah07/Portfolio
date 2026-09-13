@@ -83,6 +83,22 @@ export const portfolioData: PortfolioData = {
         "/images/projects/order-pipeline/image3.png"
       ],
       githubLink: "https://github.com/amirshah07/order-processing-pipeline"
+    },
+    {
+      id: 7,
+      title: "Blackjack Trainer",
+      description: "Blackjack Trainer is a browser-based tool for practising blackjack across three modes. Basic Strategy grades every decision against the correct play and tracks accuracy, Card Counting deals hands at speed and quizzes you periodically on the true count, and Live Play is a no-feedback table with chip betting and bankroll management. Shoe size, table occupancy and dealing speed are configurable, with a strategy chart available at any time.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      images: [
+        "/images/projects/blackjack-trainer/image1.png",
+        "/images/projects/blackjack-trainer/image2.png",
+        "/images/projects/blackjack-trainer/image3.png",
+        "/images/projects/blackjack-trainer/image4.png",
+        "/images/projects/blackjack-trainer/image5.png",
+        "/images/projects/blackjack-trainer/image6.png"
+      ],
+      liveLink: "https://blackjack-training-webapp.vercel.app/",
+      githubLink: "https://github.com/amirshah07/blackjack-trainer"
     }
   ],
 
